@@ -185,26 +185,12 @@ mark {
 
   font-weight: 700;
   color: #172126;
+
+  transition: 0.3s;
 }
 
-.main-nav__item a::after {
-  position: absolute;
-
-  left: 0;
-  bottom: -2px;
-
-  width: 0;
-  height: 2px;
-
-  background-color: #000000;
-
-  transition: 0.5s ease;
-
-  content: "";
-}
-
-.main-nav__item a:hover::after {
-  width: 100%;
+.main-nav__item a:hover {
+  color: #8284a4;
 }
 
 .menu-icon {
@@ -228,54 +214,20 @@ mark {
   background-color: #d5daea;
 }
 
-.text-link {
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.projects__wrap {
+.projects {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
 }
 
-.project-item {
-  display: flex;
-  height: 200px;
-  padding: 8px;
-  margin-bottom: 8px;
-
-  background-color: #8284a4;
-  border: 2px solid #000000;
-  border-radius: 8px;
-  /*background: url(../images/virtex-screen.JPG) top / cover no-repeat;*/
+.projects__link {
+  font-weight: 600;
+  color: #213bb0;
 }
 
-.project-item:last-child {
-  margin-bottom: 0;
-}
-
-.project-item__inner {
-  align-self: flex-end;
-  width: 300px;
-  padding: 8px;
-
-  font-size: 14px;
-  color: #ffffff;
-
-  background-color: #dea800;
-  border-radius: 8px;
-}
-
-.project-item__title {
-  margin-bottom: 8px;
-}
-
-.project-item__desc {
-  margin-bottom: 8px;
-}
-
-.project-item__image {
-  width: 100%;
+.projects__link:hover {
+  color: #627efc;
 }
 
 /* Page Footer */
@@ -329,10 +281,12 @@ mark {
 .page-footer__contacts a {
   font-size: 28px;
   color: #000000;
+
+  transition: 0.3s;
 }
 
 .page-footer__contacts a:hover {
-  transform: scale(0.9);
+  color: #8284a4;
 }
 
 /* MEDIA QUERIES */
