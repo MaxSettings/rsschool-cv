@@ -129,6 +129,31 @@
                   </p>
                 </div>
               </section>
+
+              <section class="page-section" id="code">
+                <h2 class="subtitle">Code Example</h2>
+
+                <pre class="code-block page-section__inner">
+                <code>
+  function decoder(sequence) {
+    let res = [];
+    let zeroesCount = 0;
+
+    for (let i = 0; i &lt; sequence.length; i++) {
+      if (sequence[i] === "0") {
+        zeroesCount++;
+      } else {
+        res.push(parseInt(sequence.slice(i, i + zeroesCount + 1), 2) - 1);
+        i += zeroesCount;
+        zeroesCount = 0;
+      }
+    }
+
+    return res;
+  }
+                </code>
+              </pre>
+              </section>
             </div>
           </div>
         </main>
