@@ -278,6 +278,63 @@ mark {
   width: 100%;
 }
 
+/* Page Footer */
+
+.page-footer {
+  padding: 32px 32px;
+
+  background-color: #fdd663;
+}
+
+.page-footer a {
+  display: inline-flex;
+  color: #ffffff;
+}
+
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__container > * {
+  width: 33.3%;
+}
+
+.page-footer__logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-footer__logo img {
+  width: 115px;
+  height: 43px;
+}
+
+.page-footer__date {
+  text-align: center;
+  font-size: 20px;
+}
+
+.page-footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.page-footer__contacts li + li {
+  margin-left: 32px;
+}
+
+.page-footer__contacts a {
+  font-size: 28px;
+  color: #000000;
+}
+
+.page-footer__contacts a:hover {
+  transform: scale(0.9);
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1023px) {
